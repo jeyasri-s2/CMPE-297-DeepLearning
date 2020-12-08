@@ -5,7 +5,7 @@ In our project we plan on using Generative Adversarial Network (GAN) to detect a
 1. **AlphaGAN**: The generator of this network is a convolutional encoder-decoder network that is trained both with help of the ground-truth alphas as well as the adversarial loss from the discriminator, and the discriminator is a patchGAN Discriminator.
 2. **AnoGAN**: The firstly proposed method using GAN for anomaly detection. The generator of GAN is trained to produce patches and fit the data distribution. Based on the second loss, the generator takes not only the information to fool the discriminator but the rich information of the feature representation
 
-## Inference Pipeline
+## Inference Pipeline Architecture to detect Anomaly
 ![Inference-Pipeline](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/Inference_Pipeline.png)
 
 ## Summary
