@@ -9,7 +9,7 @@ In this repository you will find the files required to train multiple different 
 
 In this repository you will find
   - Jupyter Notebooks / Google Colab Notebooks: Contains colab for AlphaGAN Training; f-AnoGAN Training; Inference Code for Anomaly Detection. 
-  - Delivarables
+  - Delivarables<br/>
          1. Proposal [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/Project%20Proposal%20-%20TheMeanSquares.pdf)<br/>
          2. Project Report [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/X-Ray%20Anomaly%20Detection%20Project%20Paper.pdf)<br/>
          3. Presentation [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/CMPE%20297%20Deep%20Learning%20Project.pdf)<br/>
