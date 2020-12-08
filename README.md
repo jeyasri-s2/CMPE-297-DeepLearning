@@ -12,9 +12,14 @@ In this repository you will find the files required to train multiple different 
 
 In this repository you will find
   - Jupyter Notebooks / Google Colab Notebooks: Contains colab for AlphaGAN Training; f-AnoGAN Training; Inference Code for Anomaly Detection. 
+      - All metrics computation
+      - Tensorboard
+      
   - Deliverables<br/>
          1. Proposal [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/Project%20Proposal%20-%20TheMeanSquares.pdf)<br/>
          2. Project Report [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/X-Ray%20Anomaly%20Detection%20Project%20Paper.pdf)<br/>
          3. Presentation [pdf](https://github.com/plodha/CMPE-297-DeepLearning/blob/main/Deliverables/CMPE%20297%20Deep%20Learning%20Project.pdf)<br/>
   - WebApp (frontend, backend)
   - TFX
+    - TFX preprocessing to create tfrecord file
+    - TFX_mura.ipynb -TFX for mura dataset
