@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="formclass">
+    <h2 class="title">Anomaly Detection with X-Ray image</h2>
+
+    <form [formGroup]="videoFileForm" (ngSubmit)="onSubmit()">
+
+       <div class="form-group">
+        <label for="name">X-Ray image</label>
+        <input type="file" class="form-control" id="frontal"  formControlName="frontal_image" (change)="onSelectFile($event)" />
+
+<!--            <img src='https://jey-public.s3-us-west-1.amazonaws.com/Bala.png' />-->
+      </div>
+
+       <div class="form-group">
+        <label for="bg-video-name">Category </label> <br>
+        <input type="radio" name="category" value="hand" formControlName="category" checked="true"> Hand<br>
+         <input type="radio" name="category" value="elbow" formControlName="category"> Elbow<br>
+          <div *ngIf="submitted && f.category.errors" class="invalid-message">
+                <div *ngIf="f.category.errors.required">Category is required</div>
+            </div>
+      </div>
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+    <br/>
+    </div>
+<div class="overlay" [hidden]="!loading">
+<div class="center" >
+
+<!--    <mat-progress-spinner [mode]="'indeterminate'" class="loadingIcon">-->
+
+<!--    </mat-progress-spinner>-->
+  <mat-progress-bar [mode]="'determinate'" [value]="determinateValue" class="loadingIcon"></mat-progress-bar>
+
+<div style="position:fixed;color:white; width:100%;top: 95%; left: 70%;z-index:99999" id="statusLabel">
+  <h4> Processing ..  </h4>
+</div>
+</div>
+</div>
+<div id="result" style="display:none">
+<table >
+<tr>
+<td>
+  <div class="video-container">
+    <img id="image" src="{{url}}" alt="X-ray image" width="400" height="600" />
+
+  </div>
+</td>
+  <td>
+    <div>
+    <h4><span style="color:green"> Anomaly Score:</span> {{title}} </h4>
+
+  </div>
+     <div class="video-container">
+    <img id="output_image" src="{{output_url}}" alt="output image" width="350" height="350" />
+
+  </div>
+
+  </td>
+</tr>
+
+    </table>
+    </div>
+
+  <div class="errorMessage">
+    <h3> {{error}}</h3>
+  </div>
+
+  <div class="footerBtn">
+<!--     <button type="submit" class="btn btn-primary" (click)="downloadOutput()" [disabled]="isDisabled" >Download Output video</button>-->
+<!--         <button type="submit" class="btn btn-primary" style="margin-left:10px" (click)="downloadText()" [disabled]="isDisabled">Download Text files</button>-->
+
+  </div>
+</div>
